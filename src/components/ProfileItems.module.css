@@ -1,0 +1,60 @@
+.usercircleIcon {
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.account {
+  position: relative;
+  line-height: 17px;
+  display: inline-block;
+  min-width: 54px;
+}
+.accountWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-8xs);
+}
+.usercircleParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.nutIcon {
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.settings {
+  position: relative;
+  line-height: 17px;
+  display: inline-block;
+  min-width: 54px;
+}
+.settingsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-8xs);
+}
+.nutParent,
+.profileItems {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.profileItems {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-14xl);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkslateblue-100);
+  font-family: var(--font-albert-sans);
+}

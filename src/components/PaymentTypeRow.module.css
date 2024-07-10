@@ -1,0 +1,85 @@
+.frameChild,
+.paymentTypeRowChild {
+  width: 146px;
+  height: 182px;
+  position: relative;
+  border-radius: var(--br-5xl);
+  display: none;
+}
+.frameChild {
+  height: 48px;
+  width: 48px;
+  border-radius: var(--br-base);
+}
+.armchairIcon {
+  height: 28px;
+  width: 28px;
+  position: relative;
+  z-index: 3;
+}
+.vectorParent {
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslateblue-100);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-2xs) var(--padding-3xs) var(--padding-4xs);
+  z-index: 2;
+}
+.freelance,
+.unregularPayment {
+  position: relative;
+  line-height: 100%;
+  z-index: 2;
+}
+.freelance {
+  display: inline-block;
+  min-width: 64px;
+}
+.unregularPayment {
+  align-self: stretch;
+  font-size: var(--font-size-3xs);
+  color: var(--color-darkslateblue-300);
+}
+.freelanceParent {
+  width: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.paymentTypeSeparator {
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 100%;
+  display: inline-block;
+  min-width: 63px;
+  white-space: nowrap;
+  z-index: 2;
+}
+.paymentTypeRow {
+  flex: 1;
+  border-radius: var(--br-5xl);
+  background-color: var(--color-whitesmoke);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xl);
+  box-sizing: border-box;
+  gap: var(--gap-lg);
+  min-width: 112px;
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkslateblue-100);
+  font-family: var(--font-albert-sans);
+}
+@media screen and (max-width: 450px) {
+  .paymentTypeSeparator {
+    font-size: var(--font-size-base);
+    line-height: 16px;
+  }
+}
